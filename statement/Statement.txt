@@ -1,0 +1,68 @@
+Problem Statement: Console-Based Rock Paper Scissors
+
+Objective
+
+Develop a Python program that allows a user to play "Rock, Paper, Scissors" against the computer via the command line interface (CLI). The game should run continuously until the user decides to quit.
+
+Core Game Rules
+
+Rock beats Scissors.
+
+Scissors beats Paper.
+
+Paper beats Rock.
+
+If both players choose the same option, it is a Tie.
+
+Functional Requirements
+
+1. Input Handling
+
+The program must accept user input from the console.
+
+Inputs should be case-insensitive (e.g., "Rock", "rock", "ROCK").
+
+The program should support flexible inputs. For example, if the user types "r" or "ro", the system should interpret this as "Rock".
+
+If the user enters invalid text (e.g., "banana"), the program should notify the user and ask for input again without crashing.
+
+The user must be able to exit the game by entering 0.
+
+2. Computer Logic
+
+The computer must select its move randomly from the three available options (Rock, Paper, Scissors).
+
+3. Win Determination
+
+Implement a function win_dec(user, computer) to compare the moves.
+
+Optional Challenge: Attempt to implement the win logic using integer mapping (e.g., assigning -1, 0, 1 to moves) instead of writing 9 distinct if/else conditions.
+
+4. Game Loop
+
+The game must not exit after a single round. It should ask for the user's choice repeatedly until the exit command is given.
+
+Sample Output
+
+--- Rock Paper Scissors ---
+Enter '0' to exit
+
+Your choice: rock
+You chose: rock
+Computer's choice: scissors
+User Wins!
+
+Your choice: p
+You chose: paper
+Computer's choice: paper
+It's a tie!
+
+Your choice: 0
+Thanks for playing!
+
+
+Constraints
+
+Use standard Python libraries (e.g., random).
+
+Ensure the code is modular (use functions for input handling and win logic).
